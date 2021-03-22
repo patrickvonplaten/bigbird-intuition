@@ -17,7 +17,7 @@ If you wonder why we need more compute when working with longer sequences, (no w
 Some of the main question when working with normal attention matrix, are following:
 
 * Do all the tokens need to attend every other token or just few tokens?
-* Why not compute attention over only those tokens that are important?
+* Why not compute attention oeuver only those tokens that are important?
 * How to decide what tokens are important?
 
 ---
