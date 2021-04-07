@@ -133,12 +133,12 @@ Random attention is ensuring that each query token will attend few random tokens
 
 ```python
 # r1, r2, r are some random indices; Note: r1, r2, r3 are different for each row 👇
-Q[0] x (Q[r1], Q[r2], ......, Q[r])
-Q[1] x (Q[r1], Q[r2], ......, Q[r])
+Q[0] x (K[r1], K[r2], ......, K[r])
+Q[1] x (K[r1], K[r2], ......, K[r])
 .
 .
 .
-Q[n-1] x (Q[r1], Q[r2], ......, Q[r])
+Q[n-1] x (K[r1], K[r2], ......, K[r])
 ```
 
 **Note:** Current implementation further divides sequence into blocks & each notation is defined w.r.to block instead of token. Hence, BigBird implemented in HuggingFace is currently having 1st block & last block as global tokens.
